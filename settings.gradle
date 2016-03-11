@@ -1,0 +1,1 @@
+include ':liferApplication', ':commonLibary', ':nineoldandroids', ':adviewLibary', ':smssdklibrary', ':mcalendarview'

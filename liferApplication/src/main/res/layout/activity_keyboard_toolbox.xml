@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_body_efeff4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_view_margin_max"
+        android:paddingRight="@dimen/activity_view_margin_max">
+
+        <ImageButton
+            android:id="@+id/ktool_ibt_cameara"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_trans_c3c3c3"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_view_margin_max"
+            android:src="@drawable/icon_xiangji"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/ktool_tv_inputarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:padding="@dimen/activity_view_margin_max"
+            android:textColor="@color/activity_text_333333"
+            android:textSize="@dimen/activity_view_textsize_max"
+            tools:ignore="LabelFor,RtlHardcoded,TextFields" />
+
+        <ImageButton
+            android:id="@+id/ktool_ibt_clearinput"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_trans_c3c3c3"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="@dimen/activity_view_margin_max"
+            android:src="@drawable/icon_clear_input"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_view_height_min"
+        android:background="@color/activity_text_dadada" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_view_margin_max"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_1"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_2"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_3"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min">
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_4"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_5"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_6"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min">
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_7"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_8"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_9"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min">
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumberpoint"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_point"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber0"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_0"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/ktool_btn_keynumber00"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_view_margin_min"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_frame_keyboard_key"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/button_hint_of_key_00"
+                    android:textColor="@color/activity_text_333333"
+                    android:textSize="@dimen/activity_view_textsize_max"
+                    tools:ignore="ButtonStyle,RtlHardcoded" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ktool_ibt_keydelete"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/activity_view_margin_min"
+                android:layout_weight="1"
+                android:background="@drawable/selector_frame_keyboard_key_delete"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:src="@drawable/icon_keybord_delete"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <Button
+                android:id="@+id/ktool_btn_keysure"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/activity_view_margin_min"
+                android:layout_marginTop="@dimen/activity_view_margin_min"
+                android:layout_weight="1"
+                android:background="@drawable/selector_frame_keyboard_key_sure"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:text="@string/button_hint_of_key_sure"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

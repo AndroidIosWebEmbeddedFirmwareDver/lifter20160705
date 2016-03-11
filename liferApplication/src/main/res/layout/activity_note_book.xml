@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_top_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/activity_notebook_top_bg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_view_margin_max"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_hint_of_year"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min"
+                android:text="@string/textview_hint_of_month"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min"
+                android:text="@string/textview_hint_of_day"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_maxs" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:paddingBottom="@dimen/activity_view_margin_max"
+            android:paddingTop="@dimen/activity_view_margin_max"
+            android:scaleType="fitXY"
+            android:src="@drawable/dash_line_vertical"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_view_margin_max"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_hint_of_outdo"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_max"
+                android:lines="1"
+                android:text="@string/textview_hint_of_money"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_view_margin_max"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textview_hint_of_income"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_min"
+                android:textColor="@color/activity_text_999999"
+                android:textSize="@dimen/activity_view_textsize_max" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_view_margin_max"
+                android:lines="1"
+                android:text="@string/textview_hint_of_money"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_note_book_detials"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_5b5d69_ffffff"
+            android:onClick="onClick"
+            android:text="@string/button_hint_of_detials"
+            android:textColor="@color/selector_ffffff_000000"
+            android:textSize="@dimen/activity_view_textsize_max"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_note_book_charts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_5b5d69_ffffff"
+            android:onClick="onClick"
+            android:text="@string/button_hint_of_charts"
+            android:textColor="@color/selector_ffffff_000000"
+            android:textSize="@dimen/activity_view_textsize_max"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_note_book_accounts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_5b5d69_ffffff"
+            android:onClick="onClick"
+            android:text="@string/button_hint_of_accounts"
+            android:textColor="@color/selector_ffffff_000000"
+            android:textSize="@dimen/activity_view_textsize_max"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_note_book_fragments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/activity_text_ffffff" />
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_top_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_main_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_top_function_height"
+        android:background="@color/activity_top_bg"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_trans_bababa"
+            android:clickable="true"
+            android:paddingBottom="@dimen/activity_view_margin_max"
+            android:paddingTop="@dimen/activity_view_margin_max"
+            tools:ignore="ContentDescription">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_scan_mainscreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/hint_of_text_scan"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_trans_bababa"
+            android:clickable="true"
+            android:paddingBottom="@dimen/activity_view_margin_max"
+            android:paddingTop="@dimen/activity_view_margin_max"
+            tools:ignore="ContentDescription">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_pay_mainscreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/hint_of_text_pay"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_trans_bababa"
+            android:clickable="true"
+            android:paddingBottom="@dimen/activity_view_margin_max"
+            android:paddingTop="@dimen/activity_view_margin_max"
+            tools:ignore="ContentDescription">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_card_mainscreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/hint_of_text_card"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_trans_bababa"
+            android:clickable="true"
+            android:paddingBottom="@dimen/activity_view_margin_max"
+            android:paddingTop="@dimen/activity_view_margin_max"
+            tools:ignore="ContentDescription">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_abwer_mainscreen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/hint_of_text_qewr"
+                android:textColor="@color/activity_text_ffffff"
+                android:textSize="@dimen/activity_view_textsize_max" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_body_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.wxl.export.lifter.common.widget.view.GridViewForScrollView
+                android:id="@+id/gv_maincontent_lists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:gravity="right"
+                android:horizontalSpacing="0dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_top_banner_height"
+                android:layout_marginBottom="@dimen/activity_view_margin_max"
+                android:layout_marginTop="@dimen/activity_view_margin_max" />
+
+            <com.wxl.export.lifter.common.widget.view.GridViewForScrollView
+                android:id="@+id/gv_maincontent_other_lists"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@color/transparent"
+                android:cacheColorHint="@android:color/transparent"
+                android:gravity="right"
+                android:horizontalSpacing="0dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="4"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0dp"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

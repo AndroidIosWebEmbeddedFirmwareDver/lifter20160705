@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="half_fab_margin">8dp</dimen>
+
+    <dimen name="updatebar_height">72.0dip</dimen>
+    <dimen name="drop_down_list_header_padding_top">12dp</dimen>
+    <dimen name="drop_down_list_header_padding_bottom">15dp</dimen>
+    <dimen name="drop_down_list_header_release_min_distance">20dp</dimen>
+    <dimen name="drop_down_list_header_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_progress_bar_height">36dp</dimen>
+    <dimen name="drop_down_list_footer_button_margin_left">8dp</dimen>
+    <dimen name="drop_down_list_footer_button_height">48dp</dimen>
+    <dimen name="default_title_height">48dp</dimen>
+    <dimen name="default_title_width">60dp</dimen>
+    <dimen name="end_time_button_margin_right">14dp</dimen>
+    <dimen name="down_list_padding_button">120dp</dimen>
+    <dimen name="start_time_ll_height">35dp</dimen>
+    <dimen name="select_time_width">140dp</dimen>
+    <dimen name="down_list_item_textview_height">50dp</dimen>
+    <dimen name="btn_back_paddingLeft">10dp</dimen>
+    <dimen name="btn_back_paddingRight">10dp</dimen>
+    <dimen name="btn_right_paddingLeft">10dp</dimen>
+    <dimen name="btn_right_paddingRight">10dp</dimen>
+    <dimen name="default_item_height">48dp</dimen>
+    <dimen name="minHeight_in_listItem_has_desc">40dp</dimen>
+
+    <!-- <dimen name="fragment_in_mainactivity_for_content_weight">1138</dimen> -->
+    <!-- dimen in performance -->
+    <dimen name="vertical_margin_of_listitem">16dp</dimen>
+    <dimen name="horizontal_margin_of_listitem">10dp</dimen>
+    <dimen name="margin_of_listitem_tv">25dp</dimen>
+    <dimen name="min_height_of_performance_list">100dp</dimen>
+    <dimen name="btn_short_padding_in_title">8dp</dimen>
+    <dimen name="btn_long_padding_in_title">16dp</dimen>
+    <dimen name="btn_vertical_margin_in_title">2dp</dimen>
+
+    <!-- dimen in shap -->
+    <dimen name="width_of_stroke">1dp</dimen>
+    <dimen name="select_corn_btn_corners">16dp</dimen>
+    <dimen name="select_corn_btn_height">32dp</dimen>
+
+    <!-- dimen in myself -->
+    <dimen name="myself_item_height">50dp</dimen>
+    <dimen name="myself_item_horizontal_margin">12dp</dimen>
+    <dimen name="myself_item_vertical_margin">15dp</dimen>
+    <dimen name="small_textSize">10sp</dimen>
+    <dimen name="normal_textSize">14sp</dimen>
+    <dimen name="middle_textSize">16sp</dimen>
+    <dimen name="big_textSize">24sp</dimen>
+
+    <!-- dimen in setPassword -->
+    <dimen name="horizontal_margin_in_setPassword">12dp</dimen>
+    <dimen name="vertical_margin_in_setPassword">15dp</dimen>
+    <dimen name="vertical_padding_in_setPasswrod">10dp</dimen>
+    <dimen name="marginTop_in_setPassword">70dp</dimen>
+    <dimen name="button_marginTop_in_setPassword">120dp</dimen>
+
+    <!-- dimen in infoActivity -->
+    <dimen name="info_item_margin_vertical">10dp</dimen>
+    <dimen name="info_item_margin_horizontal">15dp</dimen>
+    <dimen name="info_item_textSize">18sp</dimen>
+
+    <!-- dimen in useInfo -->
+    <dimen name="useInfo_item_vertical_margin">20dp</dimen>
+
+
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="line_point_s">13dp</dimen>
+    <dimen name="line_point_m">20dp</dimen>
+    <dimen name="line_point_h">27dp</dimen>
+    <dimen name="line_point_x">35dp</dimen>
+
+    <dimen name="chart_button_size">100dp</dimen>
+
+    <dimen name="axis_label_size">50sp</dimen>
+
+    <dimen name="play_chart_padding">15dp</dimen>
+
+    <dimen name="card_toolbar_btn">30dp</dimen>
+
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+
+    <!-- registerActivity -->
+    <dimen name="height_of_leftItem_in_registerActivity">48dp</dimen>
+    <dimen name="width_of_item_in_registerActivity">80dp</dimen>
+    <dimen name="marginLeft_of_item_in_registerActivity">16dp</dimen>
+
+    <!-- cashierInfoActivity -->
+    <dimen name="height_of_leftItem_in_infoActivity">48dp</dimen>
+    <dimen name="width_of_item_in_infoActivity">80dp</dimen>
+    <dimen name="margin_left_in_infoActivity_of_item">20dp</dimen>
+    <dimen name="margin_right_in_infoActivity_of_item">20dp</dimen>
+
+    <!-- base material design dimens -->
+    <dimen name="base_margin">8dp</dimen>
+    <dimen name="double_margin">16dp</dimen>
+    <dimen name="triple_margin">24dp</dimen>
+    <dimen name="fourfold_margin">32dp</dimen>
+    <dimen name="fivefold_margin">40dp</dimen>
+    <dimen name="sixfold_margin">48dp</dimen>
+    <dimen name="sevenfold_margin">56dp</dimen>
+    <dimen name="eightfold_margin">64dp</dimen>
+    <dimen name="ninefold_margin">72dp</dimen>
+
+    <dimen name="view_small_padding">1dp</dimen>
+    <dimen name="view_padding">6dp</dimen>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_trans_999999"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_view_margin_min">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_view_height_min"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="defualt_text"
+        android:textColor="@color/activity_text_000000"
+        android:textSize="@dimen/activity_view_textsize_max"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_view_margin_min"
+        android:gravity="left"
+        android:maxLines="3"
+        android:text="defualt_text"
+        android:textColor="@color/activity_text_000000"
+        android:textSize="@dimen/activity_view_textsize_max"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_view_margin_min"
+        android:gravity="right"
+        android:maxLines="1"
+        android:text="defualt_text"
+
+        android:textColor="@color/activity_text_000000"
+        android:textSize="@dimen/activity_view_textsize_max"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_view_height_min"
+        android:layout_marginTop="@dimen/activity_view_margin_min"
+        android:background="@color/activity_text_dadada" />
+
+
+</LinearLayout>

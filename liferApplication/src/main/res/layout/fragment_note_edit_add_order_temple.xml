@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vg_root_of_fragment_note_edit_add_order_temple"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+    <GridView
+        android:id="@+id/gv_fragment_note_edit_add_order_temple_lists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:gravity="right"
+        android:horizontalSpacing="0dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="5"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="0dp"
+        tools:ignore="NestedWeights,RtlHardcoded" />
+</LinearLayout>

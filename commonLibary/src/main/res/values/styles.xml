@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="commonLibaryAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/sintn_colorprimary_color</item>
+        <item name="colorPrimaryDark">@color/sintn_colorprimarydark_color</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="commonLibaryAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="commonLibaryAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="commonLibaryAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@color/sintn_colorprimary_color</item>
+        <item name="android:background">@color/sintn_colorprimary_color</item>
+        <item name="backgroundSplit">@color/black</item>
+        <item name="android:backgroundSplit">@color/black</item>
+        <item name="android:elevation" tools:ignore="NewApi">0dp</item>
+    </style>
+
+
+    <style name="CustomDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Dialog_Anim">
+        <item name="android:windowEnterAnimation">@anim/fading_in</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="info_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowAnimationStyle">@style/Dialog_Anim</item>
+    </style>
+
+    <style name="backgroundDimDialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="backgroundTransparentDialog" parent="@android:style/Theme.Dialog">
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+    <style name="base_style_for_dialogFragment" parent="@style/backgroundTransparentDialog">
+        <item name="android:layout_margin">100dp</item>
+    </style>
+
+    <!-- 水平直线 -->
+    <style name="horizontalline">
+        <item name="android:background">#ABAE9E</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter1</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="mystyle_translation_from_header_to_bottom_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="mystyle_translation_horizontal_animation" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/enter_lefttoright</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/exit_righttoleft</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="mystyle_translation_horizontal_animation_right_to_left" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/enter_righttoleft</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/exit_lefttoright</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="mystyle_scale" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/scal_popupwindow_enter</item>
+        <!-- 进入时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/scal_popupwindow_exit</item>
+        <!-- 退出时的动画 -->
+    </style>
+
+    <style name="tv_performance_item">
+        <item name="android:textColor">@color/c333333</item>
+        <item name="android:textSize">@dimen/normal_textSize</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/margin_of_listitem_tv</item>
+        <item name="android:layout_marginRight">@dimen/margin_of_listitem_tv</item>
+    </style>
+
+    <style name="tv_performance_itemName" parent="tv_performance_item">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/text_left_color</item>
+    </style>
+
+    <style name="tv_performance_itemValue" parent="tv_performance_item">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="tv_info_item">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/text_left_color</item>
+        <item name="android:paddingTop">@dimen/info_item_margin_vertical</item>
+        <item name="android:paddingBottom">@dimen/info_item_margin_vertical</item>
+        <item name="android:textSize">@dimen/normal_textSize</item>
+    </style>
+
+    <style name="tv_info_item_name" parent="tv_info_item">
+        <item name="android:layout_marginLeft">@dimen/info_item_margin_horizontal</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="tv_info_item_value" parent="tv_info_item">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/text_right_color</item>
+        <item name="android:layout_marginRight">@dimen/info_item_margin_horizontal</item>
+    </style>
+
+
+    <!--NumberProgressBar-->
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">@color/sintn_colorprimarydark_color</item>
+        <item name="progress_reached_color">@color/sintn_weixinbg_color</item>
+
+        <item name="progress_text_size">14sp</item>
+        <item name="progress_text_color">@color/white</item>
+
+        <item name="progress_reached_bar_height">4.8dp</item>
+        <item name="progress_unreached_bar_height">4.65dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Passing_Green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#70A800</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#70A800</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+
+    <style name="NumberProgressBar_Beauty_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF3D7F</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF3D7F</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#E74C3C</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#6DBCDB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Grace_Yellow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FFC73B</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FFC73B</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Funny_Orange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF530D</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF530D</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Twinkle_Night">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#ECF0F1</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#ECF0F1</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="normal_divider">
+        <item name="android:background">@color/divider_in_item</item>
+    </style>
+
+    <!--<style name="margin_divider" parent="normal_divider">-->
+        <!--<item name="android:layout_marginLeft">@dimen/margin_left_in_infoActivity_of_item</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; style in title &ndash;&gt;-->
+    <!--<style name="normal_back_btn">-->
+        <!--<item name="android:paddingLeft">@dimen/double_margin</item>-->
+        <!--<item name="android:paddingRight">@dimen/btn_back_paddingRight</item>-->
+        <!--<item name="android:background">@drawable/selector_of_normal_btn_in_title</item>-->
+        <!--<item name="android:drawableLeft">@drawable/selector_navigation_bar_back</item>-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="normal_tv_of_title">-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:layout_centerInParent">true</item>-->
+        <!--<item name="android:textSize">16dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="normal_right_btn">-->
+        <!--<item name="android:paddingLeft">@dimen/btn_right_paddingLeft</item>-->
+        <!--<item name="android:paddingRight">@dimen/double_margin</item>-->
+        <!--<item name="android:background">@drawable/selector_of_normal_btn_in_title</item>-->
+        <!--<item name="android:gravity">center_vertical|right</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <!--<item name="android:layout_alignParentRight">true</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; registerActivity &ndash;&gt;-->
+    <!--<style name="item_in_registerActivity">-->
+        <!--<item name="android:gravity">center_vertical|left</item>-->
+        <!--<item name="android:background">@color/transparent</item>-->
+        <!--<item name="android:textSize">@dimen/normal_textSize</item>-->
+        <!--<item name="android:textColor">@color/light_text</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+        <!--<item name="android:ellipsize">end</item>-->
+        <!--<item name="android:paddingRight">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--<style name="AnimBottom" parent="@android:style/Animation">-->
+        <!--<item name="android:windowEnterAnimation">@anim/push_bottom_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/push_buttom_out</item>-->
+    <!--</style>-->
+
+    <!--<style name="et_of_phone" parent="item_in_registerActivity">-->
+        <!--<item name="android:inputType">number</item>-->
+    <!--</style>-->
+
+    <!--<style name="et_in_registerActivity_of_pwd" parent="item_in_registerActivity">-->
+        <!--<item name="android:inputType">textPassword</item>-->
+        <!--<item name="android:paddingRight">0dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="btn_in_registerActivity_of_item" parent="item_in_registerActivity">-->
+        <!--<item name="android:background">@drawable/selector_transparent_999</item>-->
+    <!--</style>-->
+
+    <!--<style name="leftItem_in_registerActivity" parent="item_in_registerActivity">-->
+        <!--<item name="android:textColor">@color/dark_text</item>-->
+    <!--</style>-->
+
+    <!--<style name="ll_in_registerActivity">-->
+        <!--<item name="android:paddingLeft">@dimen/margin_left_in_infoActivity_of_item</item>-->
+        <!--<item name="android:paddingRight">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--<style name="btn_in_registerActivity_for_verification">-->
+        <!--<item name="android:textSize">@dimen/normal_textSize</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:textColor">@color/sintn_coloraccent_color</item>-->
+        <!--<item name="android:background">@drawable/selector_of_light_blue</item>-->
+    <!--</style>-->
+
+    <!--<style name="tv_in_categoryActivity_of_item">-->
+        <!--<item name="android:textSize">@dimen/normal_textSize</item>-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="item_in_categoryActivity">-->
+        <!--<item name="android:background">@drawable/selector_transparent_999</item>-->
+        <!--<item name="android:paddingLeft">16dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="iv_in_categoryItem_of_isSelected">-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <!--<item name="android:layout_marginLeft">10dp</item>-->
+        <!--<item name="android:layout_marginRight">10dp</item>-->
+        <!--<item name="android:background">@drawable/selector_of_select_iv</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; infoActivity &ndash;&gt;-->
+    <!--<style name="base_style_in_cashApp">-->
+        <!--<item name="android:gravity">center_vertical|left</item>-->
+        <!--<item name="android:textSize">@dimen/normal_textSize</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+    <!--</style>-->
+
+    <!--<style name="tv_in_infoActivity" parent="base_style_in_cashApp">-->
+        <!--<item name="android:textColor">@color/dark_text</item>-->
+        <!--<item name="android:paddingLeft">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--<style name="et_in_infoActivity" parent="base_style_in_cashApp">-->
+        <!--<item name="android:textColor">@color/light_text</item>-->
+        <!--<item name="android:background">@color/transparent</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; style in managerActivity &ndash;&gt;-->
+
+    <!--<style name="rl_in_managerActivity_of_item_title">-->
+        <!--<item name="android:paddingLeft">16dp</item>-->
+        <!--<item name="android:paddingBottom">16dp</item>-->
+        <!--<item name="android:paddingTop">16dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="tv_in_managerActivity_of_item_title">-->
+        <!--<item name="android:textColor">@color/textColor_of_manager</item>-->
+        <!--<item name="android:textSize">@dimen/middle_textSize</item>-->
+        <!--<item name="android:layout_marginLeft">6dp</item>-->
+    <!--</style>-->
+
+    <!--<style name="iv_in_managerActivity_listItem_has_more">-->
+        <!--<item name="android:background">@drawable/right_arrow</item>-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <!--<item name="android:layout_alignParentRight">true</item>-->
+        <!--<item name="android:layout_marginRight">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--<style name="baseItem_style_of_ll">-->
+        <!--<item name="android:paddingRight">@dimen/margin_left_in_infoActivity_of_item</item>-->
+        <!--<item name="android:paddingLeft">@dimen/margin_left_in_infoActivity_of_item</item>-->
+    <!--</style>-->
+
+    <!--<style name="ll_in_managerActivity_of_listItem" parent="baseItem_style_of_ll">-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <!--<item name="android:orientation">vertical</item>-->
+    <!--</style>-->
+
+    <!--<style name="tv_in_managerActivity_of_listItem_of_name">-->
+        <!--<item name="android:textSize">@dimen/middle_textSize</item>-->
+        <!--<item name="android:textColor">@color/dark_text</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+        <!--<item name="android:ellipsize">end</item>-->
+    <!--</style>-->
+
+    <!--<style name="tv_in_managerActivity_of_listItem_of_desc">-->
+        <!--<item name="android:textColor">@color/light_text</item>-->
+        <!--<item name="android:singleLine">true</item>-->
+        <!--<item name="android:ellipsize">end</item>-->
+    <!--</style>-->
+
+    <!--<style name="normal_fBtn_in_managerActivity">-->
+        <!--<item name="android:layout_alignParentBottom">true</item>-->
+        <!--<item name="android:layout_alignParentRight">true</item>-->
+        <!--<item name="android:scaleType">center</item>-->
+        <!--<item name="android:src">@drawable/plus</item>-->
+    <!--</style>-->
+    <!--&lt;!&ndash; NumberProgressBar&ndash;&gt;-->
+
+    <!--&lt;!&ndash;返回图片按钮&ndash;&gt;-->
+    <!--<style name="iv_back">-->
+        <!--<item name="android:layout_centerVertical">true</item>-->
+        <!--<item name="android:src">@drawable/icon_of_back</item>-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:layout_alignParentLeft">true</item>-->
+        <!--<item name="android:layout_marginLeft">@dimen/double_margin</item>-->
+    <!--</style>-->
+
+    <!--&lt;!&ndash; material design style &ndash;&gt;-->
+    <!--<style name="base_style">-->
+        <!--<item name="android:layout_marginBottom">@dimen/base_margin</item>-->
+        <!--<item name="android:layout_marginTop">@dimen/base_margin</item>-->
+    <!--</style>-->
+
+    <!--<style name="base_divider" parent="@style/base_style">-->
+        <!--<item name="android:layout_marginBottom">0dp</item>-->
+        <!--<item name="android:layout_marginTop">0dp</item>-->
+        <!--<item name="android:background">@color/divider_in_item</item>-->
+    <!--</style>-->
+
+</resources>

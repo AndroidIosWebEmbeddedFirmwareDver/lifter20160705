@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/activity_text_ffffff" android:state_selected="true"/>
+    <item android:drawable="@color/activity_text_ffffff" android:state_pressed="true"/>
+    <item android:drawable="@color/activity_text_5b5d69"/>
+
+</selector>

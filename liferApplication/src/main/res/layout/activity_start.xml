@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_top_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/im_start_lunch_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_arrow_back_black_24dp" />
+
+    <Button
+        android:id="@+id/btn_start_lunch_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_trans_2a2a2a"
+        android:onClick="onClick"
+        android:text="@string/button_hint_of_jump"
+        android:textColor="@color/selector_ffffff_959595"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+</RelativeLayout>

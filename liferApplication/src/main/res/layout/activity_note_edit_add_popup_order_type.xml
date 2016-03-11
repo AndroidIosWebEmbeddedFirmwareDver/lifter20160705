@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/activity_top_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_activity_note_edit_add_popup_order_type_outdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_trans_bababa"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_view_margin_max"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notetype_zhichu"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_view_margin_max"
+            android:background="@color/transparent"
+            android:text="@string/textview_hint_of_zhichu"
+            android:textColor="@color/activity_text_ffffff"
+            android:textSize="@dimen/activity_view_textsize_min"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_text_4d4d4d" />
+
+    <LinearLayout
+        android:id="@+id/btn_activity_note_edit_add_popup_order_type_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_trans_bababa"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_view_margin_max"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_notetype_shouru"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_view_margin_max"
+            android:background="@color/transparent"
+            android:text="@string/textview_hint_of_shouru"
+            android:textColor="@color/activity_text_ffffff"
+            android:textSize="@dimen/activity_view_textsize_min"
+            tools:ignore="ButtonStyle,HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+
+
+</LinearLayout>

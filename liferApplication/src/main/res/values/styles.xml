@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="liferApplicationAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/activity_top_bg</item>
+        <item name="colorPrimaryDark">@color/activity_top_bg</item>
+        <item name="colorAccent">@color/activity_top_bg</item>
+    </style>
+
+    <style name="liferApplicationAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="liferApplicationAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

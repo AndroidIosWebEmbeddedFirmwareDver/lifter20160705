@@ -1,0 +1,11 @@
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/list_item_anim"
+    android:animationOrder="normal"
+    android:delay="6" />
+
+<!--
+          		android:fromXDelta="-100%"  //起始横坐标的位置
+                android:fromYDelta="0"      //起始中坐标的位置
+                android:toXDelta="0"        //要到达什么地方（X坐标）
+                android:toYDelta="0"        //要到达什么地方(y坐标）
+-->

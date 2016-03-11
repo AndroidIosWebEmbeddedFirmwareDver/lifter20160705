@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vg_root_of_notedetialfragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_text_ffffff"
+    android:orientation="vertical">
+
+    <com.wxl.export.lifter.common.widget.view.xlistview.XListView
+        android:id="@+id/xlv_UnMemberConsumeRecords_lists"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_view_height_min"
+        android:background="@color/activity_text_dadada" />
+
+    <LinearLayout
+        android:id="@+id/ll_fragment_for_add_note_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_trans_bababa"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_add_note"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_view_margin_max"
+            android:background="@color/transparent"
+            android:text="@string/button_hint_of_addnote"
+            android:textColor="@color/activity_text_00aaff"
+            android:textSize="@dimen/activity_view_textsize_max"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

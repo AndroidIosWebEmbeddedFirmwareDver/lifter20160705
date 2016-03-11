@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_5b5d69_ffffff"
+    android:gravity="center"
+    android:text="@string/button_hint_of_accounts"
+    android:textColor="@color/selector_ffffff_000000">
+
+</TextView>

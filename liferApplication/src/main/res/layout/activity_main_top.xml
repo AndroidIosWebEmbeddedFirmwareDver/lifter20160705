@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_top_height"
+    android:background="@color/activity_top_bg"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_top_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_trans_2a2a2a"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:src="@drawable/icon_shape"
+        android:textColor="@color/selector_ffffff_959595"
+        tools:ignore="ButtonStyle,ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_top_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:gravity="center_vertical"
+        android:text="@string/hint_of_text_ordrs"
+        android:textColor="@color/activity_text_ffffff"
+        android:textSize="@dimen/activity_view_textsize_max"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/btn_top_wode"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_trans_2a2a2a"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:src="@drawable/icon_wode"
+        android:text="@string/button_hint_of_back"
+        android:textColor="@color/selector_ffffff_959595"
+        tools:ignore="ButtonStyle,ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_top_search"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_trans_2a2a2a"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:src="@drawable/icon_sousuo"
+        android:text="@string/button_hint_of_back"
+        android:textColor="@color/selector_ffffff_959595"
+        tools:ignore="ButtonStyle,ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/btn_top_add"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_trans_2a2a2a"
+        android:onClick="onClick"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:src="@drawable/icon_tianjia"
+        android:text="@string/button_hint_of_back"
+        android:textColor="@color/selector_ffffff_959595"
+        tools:ignore="ButtonStyle,ContentDescription" />
+
+</LinearLayout>
